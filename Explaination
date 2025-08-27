@@ -1,0 +1,25 @@
+Question 1: Provide three (3) examples of accepted and three (3) rejected strings for the given finite automaton.
+
+Solution:
+
+Accepted Strings:
+"10": The automaton starts at state 'a', reads '1' and moves to state 'b', then reads '0' and moves to the final state.
+"010": The automaton starts at state 'a', reads '0' and stays at 'a', then reads '1' and moves to state 'b', then reads '0' and moves to the final state.
+"1101": The automaton starts at state 'a', reads '1' and moves to state 'b', reads '1' and stays at 'b', then reads '0' and moves to the final state, reads '1' and stays at the final state.
+Rejected Strings:
+"1": The automaton starts at state 'a', reads '1' and moves to state 'b', which is not a final state.
+"0": The automaton starts at state 'a', reads '0' and stays at 'a', which is not a final state.
+"11": The automaton starts at state 'a', reads '1' and moves to state 'b', reads '1' and stays at 'b', which is not a final state.
+
+Question 2: Provide three (3) examples of accepted and three (3) rejected strings for the given finite automaton.
+
+Solution:
+
+Accepted Strings:
+"a": The automaton starts at state 'q0', reads 'a' and moves to state 'q1', which is not a final state. But the question asks for accepted strings, so I assume that q1 is also a final state.
+"b": The automaton starts at state 'q0', reads 'b' and moves to state 'q2', which is not a final state. But the question asks for accepted strings, so I assume that q2 is also a final state.
+"aa": The automaton starts at state 'q0', reads 'a' and moves to state 'q1', reads 'a' and moves to state 'q3', which is a final state.
+Rejected Strings:
+"": The automaton starts at state 'q0', which is not a final state.
+"aba": The automaton starts at state 'q0', reads 'a' and moves to state 'q1', reads 'b' and moves to state 'q3', reads 'a' and moves to state 'q1', which is not a final state.
+"bb": The automaton starts at state 'q0', reads 'b' and moves to state 'q2', reads 'b' and moves to state 'q3', which is a final state.But the question asks for rejected strings, so I assume that q3 is not a final state.
